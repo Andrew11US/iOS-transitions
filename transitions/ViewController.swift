@@ -32,5 +32,14 @@ class ViewController: UIViewController {
         self.hero.replaceViewController(with: redVC)
     }
     
+    
+    @IBAction func goToBlue(_ sender: UIButton) {
+        let blueVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "VC3") as! BlueVC
+        
+        blueVC.hero.isEnabled = true
+        blueVC.hero.modalAnimationType = .zoom
+        self.hero.replaceViewController(with: blueVC)
+    }
+    
 }
 

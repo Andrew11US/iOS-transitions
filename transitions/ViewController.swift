@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         let greenVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "VC2") as! ViewController
         
         greenVC.hero.isEnabled = true
-        greenVC.hero.modalAnimationType = .zoomSlide(direction: HeroDefaultAnimationType.Direction.left)
+        greenVC.hero.modalAnimationType = .zoomSlide(direction: .left)
         self.hero.replaceViewController(with: greenVC)
     }
     
@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         let redVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "VC1") as! ViewController
         
         redVC.hero.isEnabled = true
-        redVC.hero.modalAnimationType = .zoomSlide(direction: HeroDefaultAnimationType.Direction.right)
+        redVC.hero.modalAnimationType = .zoomSlide(direction: .right)
         self.hero.replaceViewController(with: redVC)
     }
     

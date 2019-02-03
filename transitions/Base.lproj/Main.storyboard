@@ -19,9 +19,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4f6-Zc-PIy">
-                                <rect key="frame" x="153" y="313" width="69" height="41"/>
+                                <rect key="frame" x="143" y="313" width="89" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="to Green">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -49,18 +49,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GCf-oA-68n">
-                                <rect key="frame" x="154" y="309" width="67" height="49"/>
+                                <rect key="frame" x="111" y="309" width="153" height="49"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <state key="normal" title="Back">
+                                <state key="normal" title="back Green">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="backToGreen:" destination="5WW-Xr-m1e" eventType="touchUpInside" id="RwH-LH-tqf"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="233-QP-9wN">
+                                <rect key="frame" x="156" y="428" width="63" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="to Gray">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="toGray:" destination="5WW-Xr-m1e" eventType="touchUpInside" id="Fe4-L7-Y1U"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.53343476533385625" green="0.78691838734289654" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="233-QP-9wN" firstAttribute="top" secondItem="GCf-oA-68n" secondAttribute="bottom" constant="70" id="1VS-cO-PUN"/>
+                            <constraint firstItem="233-QP-9wN" firstAttribute="centerX" secondItem="Zif-64-InZ" secondAttribute="centerX" id="7g1-iY-xbH"/>
                             <constraint firstItem="GCf-oA-68n" firstAttribute="centerY" secondItem="Zif-64-InZ" secondAttribute="centerY" id="kPa-Gh-MnK"/>
                             <constraint firstItem="GCf-oA-68n" firstAttribute="centerX" secondItem="Zif-64-InZ" secondAttribute="centerX" id="oKL-4E-2s7"/>
                         </constraints>
@@ -69,7 +81,38 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k7d-dl-sbJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="670" y="770"/>
+            <point key="canvasLocation" x="670" y="800"/>
+        </scene>
+        <!--GrayVC-->
+        <scene sceneID="BH7-53-o6y">
+            <objects>
+                <viewController storyboardIdentifier="VC4" id="dgb-t4-21q" customClass="GrayVC" customModule="transitions" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fjh-1s-q76">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iX7-DS-uDg">
+                                <rect key="frame" x="130.5" y="311" width="114" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="back Blue">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="backToBlue:" destination="dgb-t4-21q" eventType="touchUpInside" id="Vc3-vp-Uz2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.72156862749999995" green="0.74509803919999995" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="iX7-DS-uDg" firstAttribute="centerY" secondItem="Fjh-1s-q76" secondAttribute="centerY" id="Szd-iJ-26V"/>
+                            <constraint firstItem="iX7-DS-uDg" firstAttribute="centerX" secondItem="Fjh-1s-q76" secondAttribute="centerX" id="n5X-2c-Eun"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qgc-b1-0VM"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uqD-Bi-01x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1366" y="799"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="eRd-ng-47f">
@@ -80,9 +123,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xf2-g2-D3d">
-                                <rect key="frame" x="147.5" y="310.5" width="80" height="46"/>
+                                <rect key="frame" x="148.5" y="310.5" width="78" height="46"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="to Red">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -112,7 +155,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NAV-D5-8xV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1362" y="54"/>
+            <point key="canvasLocation" x="1367" y="27"/>
         </scene>
     </scenes>
 </document>

@@ -26,4 +26,12 @@ class BlueVC: UIViewController {
         self.hero.replaceViewController(with: greenVC)
     }
     
+    @IBAction func toGray(_ sender: UIButton) {
+        let grayVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "VC4") as! GrayVC
+        
+        grayVC.hero.isEnabled = true
+        grayVC.hero.modalAnimationType = .fade
+        self.hero.replaceViewController(with: grayVC)
+    }
+    
 }

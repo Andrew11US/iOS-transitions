@@ -13,6 +13,7 @@
 		01284409220770010005B071 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01284408220770010005B071 /* Assets.xcassets */; };
 		0128440C220770010005B071 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0128440A220770010005B071 /* LaunchScreen.storyboard */; };
 		012844162207778F0005B071 /* BlueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012844152207778F0005B071 /* BlueVC.swift */; };
+		0128441822078BBC0005B071 /* GrayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0128441722078BBC0005B071 /* GrayVC.swift */; };
 		FE96D387173C976AB1E33D97 /* Pods_transitions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC094A5703571ED183636B0A /* Pods_transitions.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		0128440B220770010005B071 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0128440D220770010005B071 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		012844152207778F0005B071 /* BlueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueVC.swift; sourceTree = "<group>"; };
+		0128441722078BBC0005B071 /* GrayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrayVC.swift; sourceTree = "<group>"; };
 		5CFD1868B859BADEACBD1534 /* Pods-transitions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-transitions.debug.xcconfig"; path = "Pods/Target Support Files/Pods-transitions/Pods-transitions.debug.xcconfig"; sourceTree = "<group>"; };
 		90EF7EFDD415087E0B1D8707 /* Pods-transitions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-transitions.release.xcconfig"; path = "Pods/Target Support Files/Pods-transitions/Pods-transitions.release.xcconfig"; sourceTree = "<group>"; };
 		CC094A5703571ED183636B0A /* Pods_transitions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_transitions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +68,7 @@
 				0128440122076FFF0005B071 /* AppDelegate.swift */,
 				0128440322076FFF0005B071 /* ViewController.swift */,
 				012844152207778F0005B071 /* BlueVC.swift */,
+				0128441722078BBC0005B071 /* GrayVC.swift */,
 				0128440522076FFF0005B071 /* Main.storyboard */,
 				01284408220770010005B071 /* Assets.xcassets */,
 				0128440A220770010005B071 /* LaunchScreen.storyboard */,
@@ -206,6 +209,7 @@
 				0128440422076FFF0005B071 /* ViewController.swift in Sources */,
 				0128440222076FFF0005B071 /* AppDelegate.swift in Sources */,
 				012844162207778F0005B071 /* BlueVC.swift in Sources */,
+				0128441822078BBC0005B071 /* GrayVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
